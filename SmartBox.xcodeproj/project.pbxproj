@@ -12,8 +12,6 @@
 		6378E85A1E7638850044B6DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6378E8581E7638850044B6DE /* Main.storyboard */; };
 		6378E85C1E7638850044B6DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6378E85B1E7638850044B6DE /* Assets.xcassets */; };
 		6378E85F1E7638850044B6DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6378E85D1E7638850044B6DE /* LaunchScreen.storyboard */; };
-		6378E86A1E7638B10044B6DE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6378E8691E7638B10044B6DE /* SWRevealViewController.m */; };
-		6388D9A01E7F2C13002E7E3F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6388D99F1E7F2C13002E7E3F /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +22,6 @@
 		6378E85B1E7638850044B6DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6378E85E1E7638850044B6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6378E8601E7638850044B6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6378E8671E7638B00044B6DE /* SmartBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartBox-Bridging-Header.h"; sourceTree = "<group>"; };
-		6378E8681E7638B10044B6DE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		6378E8691E7638B10044B6DE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		6388D99F1E7F2C13002E7E3F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,26 +54,14 @@
 		6378E8531E7638840044B6DE /* SmartBox */ = {
 			isa = PBXGroup;
 			children = (
-				6378E8661E7638930044B6DE /* SWRevealcontroller */,
 				6378E8541E7638850044B6DE /* AppDelegate.swift */,
 				6378E8561E7638850044B6DE /* ViewController.swift */,
-				6388D99F1E7F2C13002E7E3F /* MenuViewController.swift */,
 				6378E8581E7638850044B6DE /* Main.storyboard */,
 				6378E85B1E7638850044B6DE /* Assets.xcassets */,
 				6378E85D1E7638850044B6DE /* LaunchScreen.storyboard */,
 				6378E8601E7638850044B6DE /* Info.plist */,
 			);
 			path = SmartBox;
-			sourceTree = "<group>";
-		};
-		6378E8661E7638930044B6DE /* SWRevealcontroller */ = {
-			isa = PBXGroup;
-			children = (
-				6378E8681E7638B10044B6DE /* SWRevealViewController.h */,
-				6378E8691E7638B10044B6DE /* SWRevealViewController.m */,
-				6378E8671E7638B00044B6DE /* SmartBox-Bridging-Header.h */,
-			);
-			name = SWRevealcontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +136,6 @@
 			files = (
 				6378E8571E7638850044B6DE /* ViewController.swift in Sources */,
 				6378E8551E7638850044B6DE /* AppDelegate.swift in Sources */,
-				6378E86A1E7638B10044B6DE /* SWRevealViewController.m in Sources */,
-				6388D9A01E7F2C13002E7E3F /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +248,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SmartBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nithin.SmartBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmartBox/SmartBox-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -282,12 +259,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SmartBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nithin.SmartBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmartBox/SmartBox-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -310,7 +285,6 @@
 				6378E8651E7638850044B6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
